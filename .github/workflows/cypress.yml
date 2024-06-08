@@ -27,6 +27,15 @@ jobs:
       - name: Verify Cypress cache
         run: npm ci
 
+      - name: Print Node.js version
+        run: node --version
+
+      - name: Print NPM version
+        run: npm --version
+
+      - name: List installed packages
+        run: npm list
+
       - name: Print working directory
         run: pwd
 
